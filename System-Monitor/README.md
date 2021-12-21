@@ -1,6 +1,6 @@
 # System Monitor
 
-This Udacity project is focussed on object oriented programming. The object of the project is to use principles of OOP to make a System Monitor akin to htop in linux or task manager in windows which can interactively display vital system resource and process information. The starter code was expanded to implement the `System`, `Process`, and `Processor` classes, as well as functions within the `LinuxParser` namespace. These class objects and functions were used to develop a pipeline to extract system information and display it in the terminal using the ncurses libraries for text-based graphical output. The result of the implementation is displayed below.
+This Udacity project is focussed on object oriented programming. The object of the project is to use principles of OOP to make a System Monitor akin to htop in linux or task manager in windows which can interactively display vital system resource and process information. The starter code was expanded to implement the `System`, `Process`, and `Processor` classes, as well as functions within the `LinuxParser` namespace. These class objects and functions were used to develop a pipeline to extract system information and display it in the terminal using the ncurses libraries for text-based graphical output. The result of the implementation is displayed in the gif below.
 
 ![Alt Text](https://media.giphy.com/media/IRvLVvSXxelCv806Fy/giphy.gif)
 
