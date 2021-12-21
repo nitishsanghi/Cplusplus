@@ -1,14 +1,9 @@
-# CPPND: Memory Management Chatbot
+# Memory Management Chatbot
 
-This is the project for the third course in the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213): Memory Management.
 
-<img src="images/chatbot_demo.gif"/>
+The ChatBot code creates a dialogue where users can ask questions about some aspects of memory management in C++. After the knowledge base of the chatbot has been loaded from a text file, a knowledge graph representation is created in computer memory, where chatbot answers represent the graph nodes and user queries represent the graph edges. After a user query has been sent to the chatbot, the Levenshtein distance is used to identify the most probable answer.
 
-The ChatBot code creates a dialogue where users can ask questions about some aspects of memory management in C++. After the knowledge base of the chatbot has been loaded from a text file, a knowledge graph representation is created in computer memory, where chatbot answers represent the graph nodes and user queries represent the graph edges. After a user query has been sent to the chatbot, the Levenshtein distance is used to identify the most probable answer. The code is fully functional as-is and uses raw pointers to represent the knowledge graph and interconnections between objects throughout the project.
-
-In this project you will analyze and modify the program. Although the program can be executed and works as intended, no advanced concepts as discussed in this course have been used; there are currently no smart pointers, no move semantics and not much thought has been given to ownership or memory allocation.
-
-Your goal is to use the course knowledge to optimize the ChatBot program from a memory management perspective. There are a total of five specific tasks to be completed, which are detailed below.
+In this Udacity project, a Chatbot has been optimized for memory management by using C++ memory management concepts like smart points, move semantics, ownership, and memory allocation policies. The Chatbot program is implemented with a number of object classes which interact and handle information output on the interface. The chat interface displays information based on user input and depends on chat logic object running behind the scene. A chatbot object passes request information to the chat logic object from the database. By optimizing memory management, we ensure efficient use of memory without leaving holes in the memory, causing data races, and ensuring correct information is returned. 
 
 ## Dependencies for Running Locally
 * cmake >= 3.11
