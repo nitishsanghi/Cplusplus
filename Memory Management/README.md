@@ -3,7 +3,10 @@
 
 The ChatBot code creates a dialogue where users can ask questions about some aspects of memory management in C++. After the knowledge base of the chatbot has been loaded from a text file, a knowledge graph representation is created in computer memory, where chatbot answers represent the graph nodes and user queries represent the graph edges. After a user query has been sent to the chatbot, the Levenshtein distance is used to identify the most probable answer.
 
-In this Udacity project, a Chatbot has been optimized for memory management by using C++ memory management concepts like smart points, move semantics, ownership, and memory allocation policies. The Chatbot program is implemented with a number of object classes which interact and handle information output on the interface. The chat interface displays information based on user input and depends on chat logic object running behind the scene. A chatbot object passes request information to the chat logic object from the database. By optimizing memory management, we ensure efficient use of memory without leaving holes in the memory, causing data races, and ensuring correct information is returned. 
+Chatbot has been optimized for memory management by using C++ memory management concepts like smart points, move semantics, ownership, and memory allocation policies. The Chatbot program is implemented with a number of object classes which interact and handle information output on the interface. The chat interface displays information based on user input and depends on chat logic object running behind the scene. A chatbot object passes request information to the chat logic object from the database. By optimizing memory management, we ensure efficient use of memory without leaving holes in the memory, causing data races, and ensuring correct information is returned. The gif below illustrates a working chatbot.
+
+![Alt Text](https://media.giphy.com/media/Ey4g7BYr9gDKEl3Fbs/giphy.gif)
+
 
 ## Dependencies for Running Locally
 * cmake >= 3.11
@@ -29,11 +32,6 @@ In this Udacity project, a Chatbot has been optimized for memory management by u
 4. Run it: `./membot`.
 
 ## Project Task Details
-
-Currently, the program crashes when you close the window. There is a small bug hidden somewhere, which has something to do with improper memory management. So your first warm-up task will be to find this bug and remove it. This should familiarize you with the code and set you up for the rest of the upcoming tasks. Have fun debugging!
-
-Aside from the bug mentioned above, there are five additional major student tasks in the Memory Management chatbot project, which are:
-
 ### Task 1 : Exclusive Ownership 1
 In file `chatgui.h` / `chatgui.cpp`, make `_chatLogic` an exclusive resource to class `ChatbotPanelDialog` using an appropriate smart pointer. Where required, make changes to the code such that data structures and function parameters reflect the new structure. 
 
