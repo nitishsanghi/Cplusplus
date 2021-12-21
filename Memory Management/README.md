@@ -5,7 +5,7 @@ The ChatBot code creates a dialogue where users can ask questions about some asp
 
 Chatbot has been optimized for memory management by using C++ memory management concepts like smart points, move semantics, ownership, and memory allocation policies. The Chatbot program is implemented with a number of object classes which interact and handle information output on the interface. The chat interface displays information based on user input and depends on chat logic object running behind the scene. A chatbot object passes request information to the chat logic object from the database. By optimizing memory management, we ensure efficient use of memory without leaving holes in the memory, causing data races, and ensuring correct information is returned. The gif below illustrates a working chatbot.
 
-![Alt Text](https://media.giphy.com/media/Ey4g7BYr9gDKEl3Fbs/giphy.gif)
+![Alt Text](https://media.giphy.com/media/rnz0kNMM4DLI1llQRY/giphy.gif)
 
 
 ## Dependencies for Running Locally
