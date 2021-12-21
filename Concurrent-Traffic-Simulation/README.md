@@ -1,10 +1,8 @@
-# CPPND: Program a Concurrent Traffic Simulation
+# Concurrent Traffic Simulation
 
-<img src="data/traffic_simulation.gif"/>
+In this project, I built a thread-safe communication protocol between vehicles and intersections to complete a traffic simulation. Principles concurrent programming (such as mutexes, locks and message queues) have been used to safely pass information between concurrent threads. The traffic simulation objects are represented by individual threads which access shared memory locations to determine state of the simulation thus requiring a thread-safe communication protocol to ensure no concurrency deadlocks, vehicle simulation crashes, vehicle simulation traffic rule violation occurs.
 
-This is the project for the fourth course in the [Udacity C++ Nanodegree Program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213): Concurrency. 
-
-Throughout the Concurrency course, you have been developing a traffic simulation in which vehicles are moving along streets and are crossing intersections. However, with increasing traffic in the city, traffic lights are needed for road safety. Each intersection will therefore be equipped with a traffic light. In this project, you will build a suitable and thread-safe communication protocol between vehicles and intersections to complete the simulation. Use your knowledge of concurrent programming (such as mutexes, locks and message queues) to implement the traffic lights and integrate them properly in the code base.
+![Alt Text](https://media.giphy.com/media/Ey4g7BYr9gDKEl3Fbs/giphy.gif)
 
 ## Dependencies for Running Locally
 * cmake >= 2.8

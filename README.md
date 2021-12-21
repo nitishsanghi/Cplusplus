@@ -1,5 +1,7 @@
 # Cplusplus
-This repository contains general C++ projects listed below. Each project folder has a README.md file with detailed project description. Project list:
-1. System Monitor
-2. Chatbot
-3. Concurrent Traffic Simulation
+This repository contains general C++ projects listed below.  The projects are organized in folders with their own README.md files for more details.
+
+## Project List
+#### * System Monitor
+#### * Chatbot
+#### * Concurrent Traffic Simulation
