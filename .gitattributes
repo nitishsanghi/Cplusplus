@@ -1,3 +1,2 @@
-* linguist-vendored
-*.Makefile linguist-vendored=false
-*.cpp linguist-vendored=true
+*.Makefile linguist-detectable=false
+*.cpp linguist-detectable=true
