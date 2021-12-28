@@ -1,2 +1,2 @@
-*.Makefile linguist-detectable=false
+*.Make linguist-detectable=false
 *.cpp linguist-detectable=true
