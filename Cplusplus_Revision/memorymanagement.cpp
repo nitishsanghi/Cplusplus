@@ -17,6 +17,13 @@ struct Mystruct
 	
 };
 
+int * f1(int x){
+	//int *p = new int;
+	//*p = x;
+	int p = x;
+	return &p;
+}
+
 int main(){
 
 	int *p = (int*)malloc(3*sizeof(int));
@@ -36,6 +43,24 @@ int main(){
 	free(p);
 	free(q);
 	free(r);
+
+	int *h = new int; 
+	*h = 1;
+	cout << *h << endl << "h stored a value" << endl;
+
+	cout << f1(1) << endl;
+	int* i = f1(2);
+	cout << i << endl;
+	int* j = f1(5);
+	cout << j << endl;
+
+	cout << *i <<endl;
+
+	// Code snippet below should throw segmentation fault error at runtime
+	//int *g; 
+	//*g = 1;
+	//cout << *g << endl << "g stored a value";
+
 
 	return 0;
 }
