@@ -1,13 +1,9 @@
 #include<iostream>
+#include "node.h"
 
 using namespace std;
 
 
-struct node{ 
-	// struct member variables and functions by default are public
-		int data;
-		node *next;
-};
 
 
 int main(){
@@ -25,6 +21,4 @@ int main(){
 
 	cout << &temp2 << endl << temp2.next << endl << &temp2.next << endl;
 	cout << temp2.data << endl << temp2.next->data << endl;
-
-
 }
