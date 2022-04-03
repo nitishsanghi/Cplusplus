@@ -1,39 +1,46 @@
-#include<iostream>
+#include <iostream>
 
-class Base{
-	public:
-		Base(std::string s): s_(s){};
-
-		void print(){
-			std::cout << "String is : " << s_ << std::endl;
-		}
-
-	private:
-		std::string s_;
-};
-
-class Inherit: public Base{
-	public:
-		Inherit(bool b, std::string s): Base(s), b_(false){};
-		void print(){
-			std::cout << "Boolean is :" << b_ << std::endl;
-		}
-
-	private:
-		bool b_;		
-
-};
-
-class Foo
+class A
 {
 public:
-    int m_x {};
-    int m_y {};
+    A(int a)
+    {
+        std::cout << "A: " << a << '\n';
+    }
+    void printA(){
+    	std::cout << "A member function" << std::endl;
+    }
+};
+
+class B: public A
+{
+public:
+    B(int a, double b)
+    : A{ a }
+    {
+        std::cout << "B: " << b << '\n';
+    }
+    void printB(){
+    	std::cout << "B member function" << std::endl;
+    }
+};
+
+class C: public B
+{
+public:
+    C(int a , double b , char c)
+    : B{ a, b }
+    {
+        std::cout << "C: " << c << '\n';
+    }
+    void printC(){
+    	std::cout << "C member function" << std::endl;
+    }
 };
 
 int main()
 {
-    Foo foo { 6, 7 }; // list-initialization
+    C c{ 5, 4.3, 'R' };
 
     return 0;
 }
