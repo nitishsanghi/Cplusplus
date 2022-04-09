@@ -4,16 +4,24 @@
 
 using namespace std;
 
-using length = int;
+void test(int arr[]){
+	cout << "worked : " << sizeof(arr) << endl;
+}
 
-typedef int breadth;
 
 int main(int argc, char* argv[]){
 
-	length a = 1;
-	const breadth& b{a};
-	a = 2;
-	const int* c = &a;
-	c = nullptr;
+	int z[5]{3,4};
+	int * x = new int;
+	*x = 5;
+	int y = 0;
+	cout << sizeof(z) << endl;
+	cout << size(z) << endl;
+	cout << sizeof(x) << endl;
+	cout << *(&z[0]+1) << endl;
+	cout << z << endl;
+	cout << x << endl;
+	cout << &y << endl;
+	test(z);
 	return 0;
 }
